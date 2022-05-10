@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarefa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>C</title>
+</head>
+
+<body>
+    <!--Barra de navegação-->
+    <div class="topnav">
+        <a class="topnav-inicio" href="inicio.php">Inicio</a>
+        <a class="topnav-opcoes" href="cadastroTarefas.php">Registrar</a>
+        <a class="topnav-opcoes" href="#apagar">Apagar</a>
+    
+    </div>
+
+    <!--Conteudo/tarefas-->
+    <div class="container">
+        <form class="container-tarefas" action="cadastroTarefas.php" method="GET">
+                <input type="text" class="tarefas tarefas-titulo" name="cad-titulo" id="cad-titulo"   placeholder="Titulo">
+
+                <textarea rows="6" cols="21" maxlength="169" class="tarefas tarefas-conteudo" name="cad-conteudo" id="cad-conteudo" placeholder="Conteudo"></textarea>
+                
+                <div class="btn-confirma">
+                    <button  type="submit">
+                        <i class="fa fa-check"></i>
+                    </button>
+                </div>    
+        </form>
+    </div>
+</body>
+
+</html>

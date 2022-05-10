@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CSS barra de navegação */
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(99, 154, 216);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.topnav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 80px;
+}
+.topnav a:hover{
+    transition: 0.5s;
+    background-color: rgb(70, 108, 150);
+
+}
+
+
+
+/*CSS conteudo/tarefas */
+
+.container{
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 270px 270px 270px;
+    row-gap: 45px;
+    column-gap: 15px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.container-tarefas{
+    padding: 17px;
+    background-color: #e1eaf3;
+    border-radius: 10px;
+    color: rgb(101, 101, 101);
+    max-height: 270px;  
+    
+    
+
+}
+
+
+.tarefas{
+    outline: 0;
+    background-color: transparent;
+    border: 0 none;
+    box-shadow: none none none;
+    max-width: 270px;
+}
+
+
+
+.tarefas-conteudo{
+    margin-top: 12px;
+    height: 140px;
+    resize: none;
+    font-size: 12px;
+    text-align: start;
+    
+}
+.tarefas-titulo{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-confirma{
+    text-align: end;
+}
+
+.btn-confirma button{
+    border: 0 none;
+    width: 28px;
+    border-radius: 60%;
+    padding: 4px;
+    background-color: transparent; 
+}
+
+.btn-confirma button:hover{
+    color: #f2f2f2;
+    background-color: rgb(155, 185, 218);
+}
+
+.container-tr{
+    font-size: 12px;
+}
+

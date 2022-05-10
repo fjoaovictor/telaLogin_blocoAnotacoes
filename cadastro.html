@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <!--container da pagina de cadastro-->
+    <div class="container container-cad">
+        <!--container do formulario-->
+        <div class="container-content">
+            <h5 class="titulo">Cadastro</h5>
+            <!--Formulario de login-->
+            <form action="cadastro.php" method="POST" class="container-form">
+                <div class="input-text">
+                    <i class=""></i>
+                    <input class="input" type="text" name="cad-usuario" id="cad-usuario" placeholder="Nome de usuário" required>
+                </div>
+
+                <div class="input-text">
+                    <i class=""></i>
+                    <input class="input" type="email" name="cad-email" id="cad-email" placeholder="Email" required>
+                </div>
+                <div class="input-cpf-tel">
+                    <div class="input-text">
+                        <i class=""></i>
+                        <input class="input" type="text" name="cad-cpf" id="cad-cpf"    placeholder="CPF" required>
+                    </div>
+
+                    <div class="input-text">
+                       <i class=""></i>
+                       <input class="input" type="tel" name="cad-tel" id="cad-tel" placeholder="Telefone" required>
+                   </div>
+                </div>
+                <div class="input-text">
+                    <i class=""></i>
+                    <input class="input" type="password" name="cad-senha" id="cad-senha" placeholder="Senha" required>
+                </div>
+                <p class="validacao">Cadastrado com sucesso</p>
+                <p class="error">Usuario já cadastrado</p>
+                <input id="cad-btn" class="btn" type="submit" value="Cadastrar">
+ 
+            </form>
+            
+        </div>
+        <div class="login-cadastro">
+            Você já tem uma conta?
+            <a href="login.html"> Clique aqui </a>
+            e cadastre-se
+        </div>  
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+    
+       
+    
+</html>
